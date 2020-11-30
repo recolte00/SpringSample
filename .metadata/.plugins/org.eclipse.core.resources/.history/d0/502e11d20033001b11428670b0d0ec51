@@ -1,0 +1,22 @@
+package com.example.demo.login.controller;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class SignupController {
+	//ラジオボタンの実装
+	private Map<String, String> radioMarriage;
+	
+	//ラジオボタンの初期化メソッド
+	private Map<String,String> initRadioMarrige() {
+		Map<String,String> radio = new LinkedHashMap<>();
+		radio.put("既婚", "true");
+		radio.put("未婚", "false");
+		
+		return radio;
+	}
+	
+}
