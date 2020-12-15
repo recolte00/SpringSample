@@ -1,0 +1,21 @@
+package com.example.demo.login.controller;
+
+public class HomeController {
+	@Controller
+	public class HomeController {
+		
+		@Autowired
+		UserService userService;
+		
+		@GetMapping("/home")
+		public String getHome(Model model) {
+			model.addAttribute("contents", "login/home :: home_contents");
+			return "login/homeLayout";
+		}
+		
+		@PostMapping("/logout")
+		public String postLogout() {
+			return "redirect:/login";
+		}
+	}
+}
