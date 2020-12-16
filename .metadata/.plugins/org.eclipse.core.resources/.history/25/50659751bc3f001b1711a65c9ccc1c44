@@ -42,7 +42,7 @@ public class HomeController {
 			@PathVariable("id") String userId) {
 		System.out.println("userId = " + userId);
 		
-		model.addAttribute("contents", "login/userDetail :: userDetail_contents");
+		model.addAttribute("contents", "/login/userDetail :: userDetail_contents");
 		radioMarriage = initRadioMarrige();
 		
 		model.addAttribute("radioMarriage", radioMarriage);
