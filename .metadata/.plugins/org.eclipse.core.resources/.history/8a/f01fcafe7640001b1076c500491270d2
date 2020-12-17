@@ -98,7 +98,7 @@ public class HomeController {
 	
 	@PostMapping("/logout")
 	public String postLogout() {
-		return "redirect:/login";  
+		return "redirect:/login";
 	}
 	
 	@GetMapping("/userList/csv")

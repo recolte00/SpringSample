@@ -93,12 +93,11 @@ public class HomeController {
 		} else {
 			model.addAttribute("result", "更新失敗");
 		}
-		return getUserList(model);
 	}
 	
 	@PostMapping("/logout")
 	public String postLogout() {
-		return "redirect:/login";  
+		return "redirect:/login";
 	}
 	
 	@GetMapping("/userList/csv")

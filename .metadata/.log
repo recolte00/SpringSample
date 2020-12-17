@@ -5148,3 +5148,230 @@ Binding(CTRL+SHIFT+T,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 01:55:20.677
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.FzgxiKUm => OK
+!SESSION 2020-12-17 23:05:02.686 -----------------------------------------------
+eclipse.buildId=4.6.0.202003181317-RELEASE
+java.version=11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2020-12-17 23:05:32.024
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-12-17 23:05:32.024
+!MESSAGE CTRL+SHIFT+T の競合が発生しました:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,型を開く,
+		型を Java エディターで開きます,
+		Category(org.eclipse.ui.category.navigate,ナビゲート,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@29ae2517,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,ワークスペース内のシンボルにジャンプ,
+		,
+		Category(org.eclipse.lsp4e.category,言語サーバー,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7a78d2aa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:05:57.893
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:05:57.898
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@4b391e45[org.springframework.tooling.boot.ls:1.15.0.202003180840(id=635)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:05:57.921
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:05:58.468
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.161
+!MESSAGE Boot LS startup time from start to initialized: 20217ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.628
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vWYxxnJDisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.631
+!MESSAGE Sorting projects...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.636
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.640
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.642
+!MESSAGE Sorting projects... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.645
+!MESSAGE inside synchronized Subscriptions
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.648
+!MESSAGE subscribing to classpath changes: sts4.classpath.vWYxxnJD isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.653
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.659
+!MESSAGE subsribers = {sts4.classpath.vWYxxnJD=クラスパス通知の送信(92)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.661
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.664
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.665
+!MESSAGE Preparing classpath changed notification SpringSample
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.667
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vWYxxnJD => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.668
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.691
+!MESSAGE classpath=121 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.704
+!MESSAGE buffering callback sts4.classpath.vWYxxnJD SpringSample false 121
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.706
+!MESSAGE executing callback sts4.classpath.vWYxxnJD 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-17 23:06:18.774
+!MESSAGE executing callback sts4.classpath.vWYxxnJD SUCCESS [終了しました]
+
+!ENTRY org.eclipse.ui 2 2 2020-12-17 23:48:50.613
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2020-12-17 23:50:29.157
+!MESSAGE 内部エラー
+!STACK 1
+Java Model Exception: javax.net.ssl.SSLException: No PSK available. Unable to resume.
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:940)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1021)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:979)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:760)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:678)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:670)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.lambda$0(SpringBootJavaHoverProvider.java:41)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+Caused by: javax.net.ssl.SSLException: No PSK available. Unable to resume.
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:129)
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:308)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:264)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:255)
+	at java.base/sun.security.ssl.ServerHello$T13ServerHelloConsumer.consume(ServerHello.java:1224)
+	at java.base/sun.security.ssl.ServerHello$ServerHelloConsumer.onServerHello(ServerHello.java:984)
+	at java.base/sun.security.ssl.ServerHello$ServerHelloConsumer.consume(ServerHello.java:872)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:392)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:444)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:421)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:178)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:164)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1152)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1063)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:402)
+	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:567)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect0(HttpURLConnection.java:2758)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect(HttpURLConnection.java:2680)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1843)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1509)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:329)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:871)
+	... 13 more
+Caused by: javax.net.ssl.SSLException: No PSK available. Unable to resume.
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:129)
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:308)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:264)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:255)
+	at java.base/sun.security.ssl.ServerHello$T13ServerHelloConsumer.consume(ServerHello.java:1224)
+	at java.base/sun.security.ssl.ServerHello$ServerHelloConsumer.onServerHello(ServerHello.java:984)
+	at java.base/sun.security.ssl.ServerHello$ServerHelloConsumer.consume(ServerHello.java:872)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:392)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:444)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:421)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:178)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:164)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1152)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1063)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:402)
+	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:567)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect0(HttpURLConnection.java:2758)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect(HttpURLConnection.java:2680)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1843)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1509)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:329)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:871)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1021)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:979)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:760)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:678)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:670)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.lambda$0(SpringBootJavaHoverProvider.java:41)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+!SUBENTRY 1 org.eclipse.jdt.core 4 985 2020-12-17 23:50:29.163
+!MESSAGE No PSK available. Unable to resume.
+!STACK 0
+javax.net.ssl.SSLException: No PSK available. Unable to resume.
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:129)
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:308)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:264)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:255)
+	at java.base/sun.security.ssl.ServerHello$T13ServerHelloConsumer.consume(ServerHello.java:1224)
+	at java.base/sun.security.ssl.ServerHello$ServerHelloConsumer.onServerHello(ServerHello.java:984)
+	at java.base/sun.security.ssl.ServerHello$ServerHelloConsumer.consume(ServerHello.java:872)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:392)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:444)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:421)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:178)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:164)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1152)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1063)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:402)
+	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:567)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect0(HttpURLConnection.java:2758)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect(HttpURLConnection.java:2680)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1843)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1509)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:329)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:871)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1021)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:979)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:760)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:678)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:670)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.lambda$0(SpringBootJavaHoverProvider.java:41)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
