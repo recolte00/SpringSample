@@ -96,6 +96,16 @@ public class HomeController {
 		return getUserList(model);
 	}
 	
+	@PostMapping("/logout")
+	public String postLogout() {
+		return "redirect:/login";  
+	}
+	
+	@GetMapping("/userList/csv")
+	public String getUserListCsv(Model model) {
+		return getUserList(model);
+	}
+	
 	@PostMapping(value="/userDetail", params="delete")
 	public String postUserDetailDelete(@ModelAttribute SignupForm form, Model model) {
 		System.out.println("削除ボタンの処理");
@@ -109,15 +119,4 @@ public class HomeController {
 		}
 		return getUserList(model);
 	}
-	
-	@PostMapping("/logout")
-	public String postLogout() {
-		return "redirect:/login";  
-	}
-	
-	@GetMapping("/userList/csv")
-	public String getUserListCsv(Model model) {
-		return getUserList(model);
-	}
-	
 }
