@@ -7,4 +7,6 @@
     <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
     <fullyQualifiedTypeName name="com.example.demo.login.domain.model.User"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
 </qualifiedTypeNameHistroy>
