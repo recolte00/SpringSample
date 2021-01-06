@@ -6051,3 +6051,115 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-05 01:01:58.430
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.eGaefawk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-05 01:01:58.433
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.eGaefawk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-05 01:01:58.436
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-05 01:01:58.439
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.eGaefawk => OK
+!SESSION 2021-01-07 02:59:46.909 -----------------------------------------------
+eclipse.buildId=4.6.0.202003181317-RELEASE
+java.version=11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2021-01-07 03:00:06.334
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-01-07 03:00:06.334
+!MESSAGE CTRL+SHIFT+T の競合が発生しました:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,型を開く,
+		型を Java エディターで開きます,
+		Category(org.eclipse.ui.category.navigate,ナビゲート,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4803bf73,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,ワークスペース内のシンボルにジャンプ,
+		,
+		Category(org.eclipse.lsp4e.category,言語サーバー,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@13731ff4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:16.774
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:16.777
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@cede70a[org.springframework.tooling.boot.ls:1.15.0.202003180840(id=635)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:16.782
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:16.818
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:21.577
+!MESSAGE Boot LS startup time from start to initialized: 4255ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:21.810
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.iMZMrQaIisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:21.812
+!MESSAGE Sorting projects...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:21.815
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:21.817
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:21.818
+!MESSAGE Sorting projects... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:21.820
+!MESSAGE inside synchronized Subscriptions
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:21.822
+!MESSAGE subscribing to classpath changes: sts4.classpath.iMZMrQaI isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:21.832
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:21.838
+!MESSAGE subsribers = {sts4.classpath.iMZMrQaI=クラスパス通知の送信(66)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:21.839
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:21.841
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:21.843
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.iMZMrQaI => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:22.790
+!MESSAGE Preparing classpath changed notification SpringSample
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:22.792
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:22.826
+!MESSAGE classpath=121 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:22.860
+!MESSAGE buffering callback sts4.classpath.iMZMrQaI SpringSample false 121
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:22.861
+!MESSAGE executing callback sts4.classpath.iMZMrQaI 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 03:00:22.932
+!MESSAGE executing callback sts4.classpath.iMZMrQaI SUCCESS [終了しました]
+
+!ENTRY org.eclipse.ui 2 2 2021-01-07 03:07:36.220
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
