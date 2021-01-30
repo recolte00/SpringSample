@@ -1,0 +1,26 @@
+package com.example.demo;
+
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+	@Override
+	public void configure(WebSecurity web) throws Exception {
+		// ポイント２：静的リソースへのアクセスには、セキュリティを適用しない
+		web.ignoring().antMatchers("/webjars/**","/css/**");
+	}
+	
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		// ポイント３：直リンクの禁止
+		//　ログイン不要ページの設定
+		http.authorizeRequests().antMatchers("/webjars/**").permitAll()
+			.antMatchers("/css/**").permitAll()
+			.antMatchers("/login").permitAll()
+			.antMatchers("/signup").permitAll()
+			.anyRequest().authenticated();
+		// CSRF対策を無効に設定（一時的）
+		http.csrf().disable();
+	}
+}
