@@ -12,7 +12,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 // ポイント１：セキュリティ設定用クラス
 @EnableWebSecurity
@@ -57,10 +56,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.antMatchers("/css/**").permitAll()
 			.antMatchers("/login").permitAll()
 			.antMatchers("/signup").permitAll()
-			.antMatchers("/admin").hasAuthority("ROLE_ADMIN")
 			.anyRequest().authenticated();
 		
-		// ログイン処理
 		http.formLogin()
 			.loginProcessingUrl("/login")
 			.loginPage("/login")
@@ -68,15 +65,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.usernameParameter("userId")
 			.passwordParameter("password")
 			.defaultSuccessUrl("/home",true);
-		
-		//　ログアウト処理
-		http.logout()
-		.logoutRequestMatcher(new AntPathRequestMatcher("/login"))
-		.logoutUrl("/logout")
-		.logoutSuccessUrl("/login");
-		
 		// CSRF対策を無効に設定（一時的）
-		// http.csrf().disable();
+		http.csrf().disable();
 	}
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {

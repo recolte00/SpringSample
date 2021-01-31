@@ -42,7 +42,7 @@ public class UserDaoJdbcImpl implements UserDao {
 				+ " role)"
 				+ "VALUES(?,?,?,?,?,?,?)"
 				, user.getUserId()
-				, password
+				, user.getPassword()
 				, user.getUserName()
 				, user.getBirthday()
 				, user.getAge()
@@ -90,9 +90,6 @@ public class UserDaoJdbcImpl implements UserDao {
 	
 	@Override
 	public int updateOne(User user) throws DataAccessException {
-		
-		String password = passwordEncoder.encode(user.getPassword());
-		
 		int rowNumber = jdbc.update("UPDATE M_USER"
 				+ " SET"
 				+ " password = ?,"
@@ -101,7 +98,7 @@ public class UserDaoJdbcImpl implements UserDao {
 				+ " age = ?,"
 				+ " marriage = ?"
 				+ " WHERE user_id = ?"
-				, password
+				, user.getPassword()
 				, user.getUserName()
 				, user.getBirthday()
 				, user.getAge()

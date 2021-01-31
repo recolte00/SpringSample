@@ -101,7 +101,7 @@ public class UserDaoJdbcImpl implements UserDao {
 				+ " age = ?,"
 				+ " marriage = ?"
 				+ " WHERE user_id = ?"
-				, password
+				, user.getPassword()
 				, user.getUserName()
 				, user.getBirthday()
 				, user.getAge()

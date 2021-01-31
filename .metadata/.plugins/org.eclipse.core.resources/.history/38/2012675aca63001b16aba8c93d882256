@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="[http://www.thymeleaf.org](http://www.thymeleaf.org/)"
-  xmlns:layout="[http://www.ultraq.net.nz/thymeleaf/layout](http://www.ultraq.net.nz/thymeleaf/layout)"
-  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+  xmlns:layout="[http://www.ultraq.net.nz/thymeleaf/layout](http://www.ultraq.net.nz/thymeleaf/layout)">
 
 <head>
   <meta charset="UTF-8"></meta>
@@ -35,8 +34,7 @@
           <li role="presentation">
             <a th:href="@{'/userList'}">ユーザ管理</a>
           </li>
-		  <!-- ポイント：画面表示の認可 -->
-		  <li role="presentation" sec:authorize="hasRole('ADMIN')">
+		  <li role="presentation">
 		  	<a th:href="@{'/admin'}">アドミン用画面</a>
 		  </li>
         </ul>

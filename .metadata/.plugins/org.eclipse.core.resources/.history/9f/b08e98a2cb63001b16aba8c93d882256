@@ -35,8 +35,7 @@
           <li role="presentation">
             <a th:href="@{'/userList'}">ユーザ管理</a>
           </li>
-		  <!-- ポイント：画面表示の認可 -->
-		  <li role="presentation" sec:authorize="hasRole('ADMIN')">
+		  <li role="presentation">
 		  	<a th:href="@{'/admin'}">アドミン用画面</a>
 		  </li>
         </ul>
