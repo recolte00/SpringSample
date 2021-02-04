@@ -1,0 +1,5 @@
+package com.example.demo.login.domain.repository.jdbc.service;
+
+public class RestService {
+
+}
